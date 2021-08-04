@@ -1,0 +1,10 @@
+.hero {
+  position: relative;
+
+  &__img-wrap {
+    @include respond-to(lg) {
+      overflow: hidden;
+      height: 100vh;
+    }
+  }
+}

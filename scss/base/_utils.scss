@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include respond-to(xs) {
+    max-width: 58rem;
+  }
+
+  @include respond-to(md) {
+    max-width: 72rem;
+  }
+
+  @include respond-to(lg) {
+    max-width: 152rem;
+  }
+}
