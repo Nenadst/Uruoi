@@ -10,7 +10,9 @@ h1,
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 3.2rem;
+  font-family: $ff-serif;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -31,5 +33,9 @@ h5 {
 }
 
 h6 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-family: $ff-serif;
+  font-weight: normal;
+  color: $color-grey;
+  margin-bottom: 1.8rem;
 }

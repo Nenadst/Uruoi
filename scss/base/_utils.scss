@@ -14,3 +14,17 @@
     max-width: 152rem;
   }
 }
+
+.d-none {
+  display: none !important;
+
+  @include respond-to(md) {
+    display: flex !important;
+  }
+}
+
+.d-none-md {
+  @include respond-to(md) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,19 @@
+.series {
+  padding: 5rem 0;
+
+  &__container {
+    @include respond-to(md) {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+
+  &__img-box {
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+}

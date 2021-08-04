@@ -5,11 +5,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+
+  @include respond-to(md) {
+    font-size: 2.2rem;
+  }
+  @include respond-to(lg) {
+    height: 7.5rem;
+  }
 
   &:hover .btn--arrow {
     transform: scale(1) translateX(-5px);
     opacity: 1;
+  }
+
+  &:hover .btn--span {
+    transform: translateX(25px);
+  }
+
+  &--span {
+    position: relative;
+    transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
+      -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
   }
 
   &--arrow {
@@ -24,5 +41,9 @@
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
       opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
       -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
+
+    & svg {
+      fill: $color-white;
+    }
   }
 }

@@ -115,7 +115,9 @@ h1,
       font-size: 9rem; } }
 
 h2 {
-  font-size: 2.6rem; }
+  font-size: 3.2rem;
+  font-family: "GTSectraDisplay", sans-serif;
+  margin-bottom: 1.5rem; }
 
 h3 {
   font-size: 2.4rem;
@@ -132,7 +134,11 @@ h5 {
   margin-bottom: 3rem; }
 
 h6 {
-  font-size: 1.8rem; }
+  font-size: 1.6rem;
+  font-family: "GTSectraDisplay", sans-serif;
+  font-weight: normal;
+  color: #7f7f7f;
+  margin-bottom: 1.8rem; }
 
 .container {
   margin: 0 auto;
@@ -147,17 +153,38 @@ h6 {
     .container {
       max-width: 152rem; } }
 
+.d-none {
+  display: none !important; }
+  @media screen and (min-width: 768px) {
+    .d-none {
+      display: flex !important; } }
+
+@media screen and (min-width: 768px) {
+  .d-none-md {
+    display: none !important; } }
+
 .btn {
   color: #fff;
   background-color: #000;
   height: 5.9rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative; }
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .btn {
+      font-size: 2.2rem; } }
+  @media screen and (min-width: 1200px) {
+    .btn {
+      height: 7.5rem; } }
   .btn:hover .btn--arrow {
     transform: scale(1) translateX(-5px);
     opacity: 1; }
+  .btn:hover .btn--span {
+    transform: translateX(25px); }
+  .btn--span {
+    position: relative;
+    transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
   .btn--arrow {
     position: absolute;
     color: #fff;
@@ -168,20 +195,22 @@ h6 {
     opacity: 0;
     transform: scale(0.8) translateX(0);
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
+    .btn--arrow svg {
+      fill: #fff; }
 
 .footer {
   padding: 3rem 0; }
-  .footer__grid {
+  .footer__wrapper {
     display: flex;
     flex-direction: column;
     width: 100%; }
     @media screen and (min-width: 600px) {
-      .footer__grid {
+      .footer__wrapper {
         flex-direction: row-reverse;
         justify-content: space-between;
         gap: 3rem; } }
     @media screen and (min-width: 768px) {
-      .footer__grid {
+      .footer__wrapper {
         gap: 5rem; } }
   @media screen and (min-width: 600px) {
     .footer__content {
@@ -281,3 +310,15 @@ h6 {
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
   font-size: 1.6rem; }
+
+.series {
+  padding: 5rem 0; }
+  @media screen and (min-width: 768px) {
+    .series__container {
+      display: flex;
+      align-items: center;
+      gap: 3rem; } }
+  .series__img-box {
+    margin-bottom: 4rem; }
+  .series__text {
+    margin-bottom: 4rem; }
