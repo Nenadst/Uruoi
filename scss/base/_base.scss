@@ -5,14 +5,15 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   @include respond-to(md) {
     // font-size: 1.6vw !important; //23.04px
     font-size: 1vw !important;
   }
   @include respond-to(lg) {
     // font-size: 1.38889vw !important; //20px
-    font-size: 0.521vw !important; //10px
+    // font-size: 0.521vw !important; //10px
+    font-size: 0.694445vw !important; //10px
   }
   font-family: $ff-sans;
 }
