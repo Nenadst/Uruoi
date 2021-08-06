@@ -1,0 +1,49 @@
+.authentic {
+  padding: 8rem 0;
+
+  &__wrap {
+    @include respond-to(sm) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      gap: 1rem;
+    }
+  }
+
+  &__img-box {
+    margin-bottom: 4rem;
+
+    @include respond-to(sm) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__text-box {
+    @include respond-to(sm) {
+      flex-basis: 50%;
+    }
+
+    @include respond-to(lg) {
+      flex-basis: 39%;
+    }
+
+    @include respond-to(xlg) {
+      flex-basis: 30%;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin: 1.9rem 0 1.5rem;
+    line-height: 2.6rem;
+
+    @include respond-to(md) {
+      font-size: 1.8rem;
+      margin: 4.1rem 0 1.5rem;
+    }
+
+    @include respond-to(lg) {
+      font-size: 1.4rem;
+    }
+  }
+}

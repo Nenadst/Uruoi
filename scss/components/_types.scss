@@ -7,6 +7,11 @@
     text-align: center;
     letter-spacing: 0.67rem;
     margin-bottom: 4rem;
+
+    @include respond-to(xlg) {
+      font-size: 1.4rem;
+      margin-bottom: 8.7rem;
+    }
   }
 
   &__wrap {
@@ -58,6 +63,7 @@
 
     &:hover {
       color: $color-silver;
+      cursor: pointer;
     }
   }
 
@@ -72,7 +78,7 @@
       left: 0;
       height: 2px;
       width: 100%;
-      border-bottom: 2px solid $color-silver;
+      background-color: $color-silver;
     }
   }
 }

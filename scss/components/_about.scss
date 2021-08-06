@@ -1,0 +1,125 @@
+.about {
+  padding: 5rem 0;
+
+  &__wrap {
+    @include respond-to(sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__heading-content {
+    margin-bottom: 6rem;
+
+    @include respond-to(md) {
+      display: flex;
+      gap: 1rem;
+    }
+
+    @include respond-to(lg) {
+      gap: 3rem;
+    }
+  }
+
+  &__img-content {
+    @include respond-to(sm) {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-basis: 35%;
+      gap: 2rem;
+    }
+  }
+
+  &__img-box {
+    display: none;
+  }
+
+  &__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.45rem;
+    color: $color-black;
+    font-family: $ff-sans;
+    margin-bottom: 3.4rem;
+
+    @include respond-to(sm) {
+      font-size: 1.2rem;
+    }
+
+    @include respond-to(md) {
+      line-height: 2.5;
+    }
+
+    @include respond-to(lg) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__title {
+    color: rgba($color-black, $alpha: 0.3);
+    font-size: 4.2rem;
+    font-family: $ff-serif;
+    margin-bottom: 1.7rem;
+    cursor: pointer;
+
+    @include respond-to(sm) {
+      font-size: 2.5rem;
+    }
+
+    @include respond-to(lg) {
+      font-size: 4rem;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 6.8rem;
+    }
+  }
+
+  &__active {
+    color: $color-black;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 0.2vw;
+      width: 100%;
+      left: 0;
+      bottom: -1vw;
+      background: #000;
+      transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
+    }
+  }
+
+  &__active-content {
+    display: flex;
+  }
+
+  &__img-box {
+    margin-bottom: 3rem;
+  }
+
+  &__img {
+    width: 22.8rem;
+    height: 31.1rem;
+  }
+
+  &__text {
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    color: $color-silver;
+
+    @include respond-to(sm) {
+      font-size: 1.3rem;
+    }
+
+    @include respond-to(lg) {
+      font-size: 2rem;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 3rem;
+    }
+  }
+}
