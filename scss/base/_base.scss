@@ -12,8 +12,8 @@ html {
   }
   @include respond-to(lg) {
     // font-size: 1.38889vw !important; //20px
-    // font-size: 0.521vw !important; //10px
-    font-size: 0.694445vw !important; //10px
+    font-size: 0.521vw !important; //10px
+    // font-size: 0.694445vw !important; //10px
   }
   font-family: $ff-sans;
 }
