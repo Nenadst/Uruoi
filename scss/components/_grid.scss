@@ -1,16 +1,44 @@
 .grid {
   padding: 5rem 0;
+
+  &__heading-main {
+    font-family: $ff-serif;
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+
+    @include respond-to(lg) {
+      font-size: 3rem;
+      margin-bottom: 8rem;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 3.6rem;
+      margin-bottom: 12.2rem;
+    }
+  }
+
   &__wrap {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
-    @include respond-to(md) {
+    @include respond-to(xs) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @include respond-to(md) {
+      grid-template-columns: repeat(3, 1fr);
       gap: 5rem;
     }
 
     @include respond-to(lg) {
-      grid-template-columns: repeat(3, 1fr);
+      row-gap: 7rem;
+      column-gap: 10rem;
+    }
+
+    @include respond-to(xlg) {
+      row-gap: 8.9rem;
+      column-gap: 21.3rem;
     }
   }
 
@@ -22,16 +50,13 @@
     }
   }
 
-  &__img-box {
-    height: 80vw;
-    overflow: hidden;
-
-    @include respond-to(sm) {
-      height: 60vw;
+  &__img img {
+    @include respond-to(lg) {
+      max-width: 100%;
     }
 
-    @include respond-to(md) {
-      height: auto;
+    @include respond-to(xlg) {
+      max-width: 37.2rem;
     }
   }
 
@@ -109,6 +134,10 @@
   &__heading {
     margin: 1.5rem 0;
     font-family: $ff-sans;
+
+    @include respond-to(xlg) {
+      margin: 2.2rem 0 1.6rem;
+    }
   }
 
   &__subtitle {
