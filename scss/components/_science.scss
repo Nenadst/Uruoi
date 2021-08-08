@@ -42,6 +42,14 @@
 
   &__title {
     margin-bottom: 4rem;
+
+    @include respond-to(lg) {
+      margin-bottom: 10rem;
+    }
+
+    @include respond-to(xlg) {
+      margin-bottom: 14rem;
+    }
   }
 
   &__text {
