@@ -309,11 +309,13 @@ h6 {
         font-size: 3rem; } }
 
 .authentic {
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  background-color: #f7f7f7; }
   @media screen and (min-width: 600px) {
     .authentic__wrap {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-direction: row-reverse;
       gap: 1rem; } }
   .authentic__img-box {
@@ -330,17 +332,24 @@ h6 {
   @media screen and (min-width: 1600px) {
     .authentic__text-box {
       flex-basis: 30%; } }
+  .authentic__text-wrap {
+    margin-top: 3rem; }
+    @media screen and (min-width: 1200px) {
+      .authentic__text-wrap {
+        margin-top: 6rem; } }
   .authentic__text {
     font-size: 1.4rem;
-    margin: 1.9rem 0 1.5rem;
+    margin-bottom: 1.5rem;
     line-height: 2.6rem; }
     @media screen and (min-width: 768px) {
       .authentic__text {
-        font-size: 1.8rem;
-        margin: 4.1rem 0 1.5rem; } }
+        font-size: 1.8rem; } }
     @media screen and (min-width: 1200px) {
       .authentic__text {
-        font-size: 1.4rem; } }
+        font-size: 2rem; } }
+    @media screen and (min-width: 1600px) {
+      .authentic__text {
+        font-size: 1.9rem; } }
 
 .btn {
   color: #fff;
@@ -519,6 +528,100 @@ h6 {
       .footer__copyright {
         order: 3; } }
 
+.ingredient {
+  padding-bottom: 4rem;
+  background-color: #f1f2f2; }
+  @media screen and (min-width: 600px) {
+    .ingredient {
+      padding-bottom: 0; } }
+  @media screen and (min-width: 600px) {
+    .ingredient__wrap {
+      display: flex;
+      flex-direction: row; } }
+  .ingredient__left-content {
+    position: relative;
+    margin-bottom: 4.3rem; }
+    @media screen and (min-width: 600px) {
+      .ingredient__left-content {
+        flex-basis: 50%;
+        margin-bottom: 0; } }
+  .ingredient__heading-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: #fff; }
+  .ingredient__heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .ingredient__heading-big {
+    font-size: 3.2rem;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 1600px) {
+      .ingredient__heading-big {
+        font-size: 5.5rem; } }
+  .ingredient__heading-small {
+    font-size: 1.9rem; }
+    @media screen and (min-width: 1600px) {
+      .ingredient__heading-small {
+        font-size: 2.6rem; } }
+  .ingredient__sup {
+    font-size: 2rem; }
+  .ingredient__right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 10.8vw; }
+    @media screen and (min-width: 600px) {
+      .ingredient__right-content {
+        flex-basis: 50%;
+        flex-direction: column-reverse;
+        padding: 0 6vw; } }
+    @media screen and (min-width: 1600px) {
+      .ingredient__right-content {
+        padding: 0 14vw; } }
+  .ingredient__text {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.2rem; }
+    @media screen and (min-width: 600px) {
+      .ingredient__text {
+        font-size: 1rem; } }
+    @media screen and (min-width: 1600px) {
+      .ingredient__text {
+        font-size: 1.9rem;
+        line-height: 2.6rem; } }
+  .ingredient__img-box-small {
+    width: 37.8125vw;
+    height: 50vw;
+    position: relative;
+    z-index: 2; }
+    @media screen and (min-width: 600px) {
+      .ingredient__img-box-small {
+        width: 15.75521vw;
+        height: 20.83333vw; } }
+    .ingredient__img-box-small::after {
+      content: "";
+      position: absolute;
+      width: 78.125vw;
+      height: 0.3125vw;
+      bottom: 2vw;
+      left: -14vw;
+      background: #000;
+      opacity: 0.8;
+      transform-origin: left;
+      transform: rotate(-35deg);
+      z-index: -1; }
+      @media screen and (min-width: 600px) {
+        .ingredient__img-box-small::after {
+          height: 1px;
+          width: 32.55208vw;
+          left: -6vw; } }
+
 .input {
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.58);
@@ -637,6 +740,18 @@ h6 {
     @media screen and (min-width: 1600px) {
       .staples__desc-text {
         font-size: 1.8rem; } }
+  .staples__subtitle {
+    font-family: "GTSectraDisplay", sans-serif;
+    color: #7f7f7f;
+    letter-spacing: 0.3px; }
+    @media screen and (min-width: 768px) {
+      .staples__subtitle {
+        font-size: 2rem;
+        margin-bottom: 2.5rem; } }
+    @media screen and (min-width: 768px) {
+      .staples__subtitle {
+        font-size: 2.6rem;
+        margin-bottom: 3.2rem; } }
   .staples__text {
     margin-bottom: 4rem;
     color: rgba(0, 0, 0, 0.7); }

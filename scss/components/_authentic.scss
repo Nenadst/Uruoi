@@ -1,10 +1,12 @@
 .authentic {
   padding: 8rem 0;
+  background-color: $color-light;
 
   &__wrap {
     @include respond-to(sm) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-direction: row-reverse;
       gap: 1rem;
     }
@@ -32,18 +34,29 @@
     }
   }
 
+  &__text-wrap {
+    margin-top: 3rem;
+
+    @include respond-to(lg) {
+      margin-top: 6rem;
+    }
+  }
+
   &__text {
     font-size: 1.4rem;
-    margin: 1.9rem 0 1.5rem;
+    margin-bottom: 1.5rem;
     line-height: 2.6rem;
 
     @include respond-to(md) {
       font-size: 1.8rem;
-      margin: 4.1rem 0 1.5rem;
     }
 
     @include respond-to(lg) {
-      font-size: 1.4rem;
+      font-size: 2rem;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 1.9rem;
     }
   }
 }
