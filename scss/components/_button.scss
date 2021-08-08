@@ -24,7 +24,6 @@
   &:hover .btn--arrow {
     transform: scale(1) translateX(-5px);
     opacity: 1;
-    display: flex;
   }
 
   &:hover .btn--span {
@@ -35,6 +34,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-right: 3rem;
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
       -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
   }
@@ -42,9 +42,7 @@
   &--arrow {
     color: $color-white;
     height: 100%;
-    margin-top: 0.3rem;
     opacity: 0;
-    display: none;
     transform: scale(0.8) translateX(0);
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
       opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
