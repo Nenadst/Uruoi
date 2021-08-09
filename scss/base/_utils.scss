@@ -73,3 +73,21 @@
 .font-size-4 {
   font-size: 3rem;
 }
+
+.ml-auto {
+  @include respond-to(md) {
+    margin-left: auto;
+  }
+}
+
+.mr-auto {
+  @include respond-to(md) {
+    margin-right: auto;
+  }
+}
+
+.mlr-auto {
+  @include respond-to(md) {
+    margin: 0 auto;
+  }
+}
