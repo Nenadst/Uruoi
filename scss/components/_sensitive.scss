@@ -1,5 +1,6 @@
-.gallery {
-  padding: 8rem 0 5.6rem;
+.sensitive {
+  padding: 5rem 0;
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -11,11 +12,24 @@
     }
 
     @include respond-to(md) {
-      gap: 5rem;
+      row-gap: 5rem;
+      column-gap: 5rem;
     }
 
     @include respond-to(lg) {
-      grid-template-columns: repeat(3, 1fr);
+      row-gap: 8rem;
+      column-gap: 10rem;
+    }
+
+    @include respond-to(xlg) {
+      row-gap: 13.3rem;
+      column-gap: 19.1rem;
+    }
+  }
+
+  &__card h2 {
+    @include respond-to(xlg) {
+      margin-bottom: 1.1rem;
     }
   }
 
@@ -27,9 +41,32 @@
     }
   }
 
-  &__card h2 {
+  &__subtitle {
+    color: $color-grey;
+    margin-bottom: 2rem;
+    font-family: $ff-serif;
+    letter-spacing: 0.495238px;
+
+    @include respond-to(lg) {
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: rgba($color-black, $alpha: 0.7);
+    margin-bottom: 1.4rem;
+
+    @include respond-to(lg) {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+    }
+
     @include respond-to(xlg) {
-      margin-bottom: 1.1rem;
+      width: 56.8rem;
     }
   }
 
@@ -105,41 +142,6 @@
       bottom: 0;
       transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
         -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
-    }
-  }
-
-  &__img img {
-    @include respond-to(sm) {
-      max-width: 37.2rem;
-    }
-  }
-
-  &__subtitle {
-    color: $color-grey;
-    margin-bottom: 2rem;
-    font-family: $ff-serif;
-    letter-spacing: 0.495238px;
-
-    @include respond-to(lg) {
-      font-size: 2.6rem;
-      line-height: 3.1rem;
-      margin-bottom: 2.8rem;
-    }
-  }
-
-  &__text {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-    color: rgba($color-black, $alpha: 0.7);
-    margin-bottom: 1.4rem;
-
-    @include respond-to(lg) {
-      font-size: 1.8rem;
-      line-height: 2.6rem;
-    }
-
-    @include respond-to(xlg) {
-      width: 48rem;
     }
   }
 

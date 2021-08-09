@@ -232,6 +232,13 @@ h6 {
   .mlr-auto {
     margin: 0 auto; } }
 
+@media screen and (min-width: 1200px) {
+  .align-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 8rem; } }
+
 .about {
   padding: 5rem 0; }
   @media screen and (min-width: 600px) {
@@ -556,7 +563,6 @@ h6 {
         column-gap: 2rem; } }
     @media screen and (min-width: 768px) {
       .gallery__grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 5rem; } }
     @media screen and (min-width: 1200px) {
       .gallery__grid {
@@ -565,6 +571,9 @@ h6 {
     position: relative; }
     .gallery__content:hover .gallery__hover-info {
       opacity: 1; }
+  @media screen and (min-width: 1600px) {
+    .gallery__card h2 {
+      margin-bottom: 1.1rem; } }
   .gallery__hover-info {
     position: absolute;
     left: 0;
@@ -624,9 +633,6 @@ h6 {
       left: 0;
       bottom: 0;
       transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
-  @media screen and (min-width: 1600px) {
-    .gallery__card h2 {
-      margin-bottom: 1.1rem; } }
   @media screen and (min-width: 600px) {
     .gallery__img img {
       max-width: 37.2rem; } }
@@ -654,7 +660,11 @@ h6 {
         width: 48rem; } }
   .gallery__heading-sub {
     margin: 0.7rem 0;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    font-family: "GTSectraDisplay", sans-serif; }
+    @media screen and (min-width: 768px) {
+      .gallery__heading-sub {
+        font-family: "Helvetica", sans-serif; } }
     @media screen and (min-width: 1200px) {
       .gallery__heading-sub {
         font-size: 3rem;
@@ -777,7 +787,11 @@ h6 {
       transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
   .grid__heading {
     margin: 0.7rem 0;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    font-family: "GTSectraDisplay", sans-serif; }
+    @media screen and (min-width: 768px) {
+      .grid__heading {
+        font-family: "Helvetica", sans-serif; } }
     @media screen and (min-width: 1200px) {
       .grid__heading {
         font-size: 3rem;
@@ -941,6 +955,140 @@ h6 {
     @media screen and (min-width: 1200px) {
       .science__text {
         font-size: 4.8rem; } }
+
+.sensitive {
+  padding: 5rem 0; }
+  .sensitive__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3.6rem; }
+    @media screen and (min-width: 600px) {
+      .sensitive__grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem; } }
+    @media screen and (min-width: 768px) {
+      .sensitive__grid {
+        row-gap: 5rem;
+        column-gap: 5rem; } }
+    @media screen and (min-width: 1200px) {
+      .sensitive__grid {
+        row-gap: 8rem;
+        column-gap: 10rem; } }
+    @media screen and (min-width: 1600px) {
+      .sensitive__grid {
+        row-gap: 13.3rem;
+        column-gap: 19.1rem; } }
+  @media screen and (min-width: 1600px) {
+    .sensitive__card h2 {
+      margin-bottom: 1.1rem; } }
+  .sensitive__content {
+    position: relative; }
+    .sensitive__content:hover .gallery__hover-info {
+      opacity: 1; }
+  .sensitive__subtitle {
+    color: #7f7f7f;
+    margin-bottom: 2rem;
+    font-family: "GTSectraDisplay", sans-serif;
+    letter-spacing: 0.495238px; }
+    @media screen and (min-width: 1200px) {
+      .sensitive__subtitle {
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+        margin-bottom: 2.8rem; } }
+  .sensitive__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1.4rem; }
+    @media screen and (min-width: 1200px) {
+      .sensitive__text {
+        font-size: 1.8rem;
+        line-height: 2.6rem; } }
+    @media screen and (min-width: 1600px) {
+      .sensitive__text {
+        width: 56.8rem; } }
+  .sensitive__hover-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
+    background-color: rgba(0, 0, 0, 0.6); }
+  .sensitive__rating {
+    position: absolute;
+    top: 31%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 4.6875vw;
+    z-index: 2; }
+  .sensitive__svg-star {
+    width: 1.8rem;
+    fill: #fff; }
+  .sensitive__price {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 36.5%;
+    width: 100%;
+    font-weight: 300;
+    height: 4.55729vw;
+    line-height: 4.55729vw;
+    font-size: 1.30208vw;
+    letter-spacing: 0.39062vw;
+    transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
+  .sensitive__cart {
+    position: absolute;
+    left: 50%;
+    bottom: 13.5%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.5625vw;
+    height: 4.55729vw;
+    line-height: 4.55729vw;
+    padding: 0 0.65104vw;
+    font-weight: 400;
+    letter-spacing: 0.15625vw;
+    cursor: pointer; }
+    @media screen and (min-width: 1200px) {
+      .sensitive__cart {
+        font-size: 1.2vw; } }
+    .sensitive__cart::after {
+      content: "";
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
+  .sensitive__heading-sub {
+    margin: 0.7rem 0;
+    font-size: 2.5rem;
+    font-family: "GTSectraDisplay", sans-serif; }
+    @media screen and (min-width: 768px) {
+      .sensitive__heading-sub {
+        font-family: "Helvetica", sans-serif; } }
+    @media screen and (min-width: 1200px) {
+      .sensitive__heading-sub {
+        font-size: 3rem;
+        margin: 1.5rem 0; } }
+    @media screen and (min-width: 1600px) {
+      .sensitive__heading-sub {
+        font-size: 3rem;
+        margin: 2.2rem 0 1.6rem; } }
+  .sensitive__desc {
+    font-family: "GTSectraDisplay", sans-serif;
+    line-height: 1.9rem;
+    color: rgba(0, 0, 0, 0.6); }
+    @media screen and (min-width: 1200px) {
+      .sensitive__desc {
+        font-size: 1.8rem;
+        line-height: 2.1rem; } }
 
 .series {
   padding: 5rem 0; }

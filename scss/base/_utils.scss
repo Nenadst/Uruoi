@@ -91,3 +91,12 @@
     margin: 0 auto;
   }
 }
+
+.align-end {
+  @include respond-to(lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 8rem;
+  }
+}
