@@ -53,4 +53,10 @@
       fill: $color-white;
     }
   }
+
+  &--cart {
+    @include respond-to(lg) {
+      flex-basis: 65%;
+    }
+  }
 }

@@ -164,7 +164,7 @@ h6 {
 
 .container {
   margin: 0 auto;
-  padding: 0 2rem; }
+  padding: 0 1.9rem; }
   @media screen and (min-width: 480px) {
     .container {
       max-width: 58rem; } }
@@ -409,6 +409,9 @@ h6 {
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
     .btn--arrow svg {
       fill: #fff; }
+  @media screen and (min-width: 1200px) {
+    .btn--cart {
+      flex-basis: 65%; } }
 
 .fit {
   padding-top: 5rem; }
@@ -906,6 +909,257 @@ h6 {
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
   font-size: 1.6rem; }
+
+.product {
+  padding: 5rem 0; }
+  .product__top-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.1rem; }
+    @media screen and (min-width: 1200px) {
+      .product__top-wrap {
+        margin-bottom: 2.5rem; } }
+  .product__breadcrumb-box {
+    flex-basis: 39%; }
+  .product__breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.6rem; }
+  .product__link {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.41rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4); }
+    @media screen and (min-width: 1200px) {
+      .product__link {
+        font-size: 1.2rem;
+        letter-spacing: 0.49rem; } }
+    .product__link::after {
+      content: "/"; }
+  .product__link-active {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+    color: #000; }
+    @media screen and (min-width: 1200px) {
+      .product__link-active {
+        font-size: 1.2rem;
+        letter-spacing: 0.49rem; } }
+  @media screen and (min-width: 1200px) {
+    .product__top-buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 4rem; } }
+  @media screen and (min-width: 1600px) {
+    .product__top-buttons {
+      margin-bottom: 6rem; } }
+  .product__btn {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.45rem;
+    text-transform: uppercase;
+    color: #000; }
+    @media screen and (min-width: 1200px) {
+      .product__btn {
+        font-size: 1.6rem;
+        letter-spacing: 0.65rem; } }
+  .product__separator {
+    vertical-align: middle;
+    margin: 0 0.3rem; }
+    @media screen and (min-width: 1200px) {
+      .product__separator {
+        margin: 0 1rem; } }
+    @media screen and (min-width: 1600px) {
+      .product__separator {
+        margin: 0 1rem 0.2rem 1rem; } }
+  @media screen and (min-width: 600px) {
+    .product__content {
+      display: flex; } }
+  @media screen and (min-width: 1600px) {
+    .product__content {
+      gap: 8.3rem; } }
+  .product__img-box {
+    margin-bottom: 1.7rem; }
+    @media screen and (min-width: 600px) {
+      .product__img-box {
+        flex-basis: 45%; } }
+  .product__right-box {
+    margin: 0 auto;
+    padding: 0 1.9rem; }
+    @media screen and (min-width: 480px) {
+      .product__right-box {
+        max-width: 58rem; } }
+    @media screen and (min-width: 600px) {
+      .product__right-box {
+        flex-basis: 55%; } }
+    @media screen and (min-width: 768px) {
+      .product__right-box {
+        max-width: none;
+        padding: 0 10.8vw; } }
+    @media screen and (min-width: 1600px) {
+      .product__right-box {
+        padding: 0 10.8vw 0 0; } }
+  .product__heading-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem; }
+    @media screen and (min-width: 1200px) {
+      .product__heading-wrap {
+        margin-bottom: 1.2rem; } }
+    @media screen and (min-width: 1600px) {
+      .product__heading-wrap {
+        margin-bottom: 1.8rem; } }
+  .product__heading h1 {
+    color: #000;
+    font-family: "Helvetica", sans-serif;
+    font-size: 2.7rem; }
+    @media screen and (min-width: 1200px) {
+      .product__heading h1 {
+        font-size: 3.5rem; } }
+    @media screen and (min-width: 1600px) {
+      .product__heading h1 {
+        font-size: 7rem; } }
+  .product__price {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column; }
+  .product__price-big {
+    font-size: 1.7rem;
+    letter-spacing: 0.85px;
+    line-height: 2.5rem; }
+    @media screen and (min-width: 1200px) {
+      .product__price-big {
+        font-size: 2.3rem;
+        letter-spacing: 0.14rem; } }
+    @media screen and (min-width: 1600px) {
+      .product__price-big {
+        font-size: 2.9rem; } }
+  .product__price-small {
+    font-size: 1.4rem;
+    letter-spacing: 0.75px;
+    line-height: 2.5rem;
+    color: #a8a8a8; }
+    @media screen and (min-width: 1200px) {
+      .product__price-small {
+        font-size: 1.7rem;
+        letter-spacing: 0.11rem; } }
+    @media screen and (min-width: 1600px) {
+      .product__price-small {
+        font-size: 2.3rem; } }
+  .product__subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.746429px;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.58);
+    margin-bottom: 1.4rem; }
+    @media screen and (min-width: 1200px) {
+      .product__subtitle {
+        font-size: 1.4rem;
+        letter-spacing: 1.05rem;
+        margin-bottom: 5.7rem; } }
+  .product__desc {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    letter-spacing: 3.69643px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+    @media screen and (min-width: 1200px) {
+      .product__desc {
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+        margin-bottom: 5.5rem; } }
+  @media screen and (min-width: 600px) {
+    .product__flex {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 3rem; } }
+  @media screen and (min-width: 1200px) {
+    .product__flex {
+      gap: 5.2rem; } }
+  .product__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem; }
+    @media screen and (min-width: 600px) {
+      .product__wrap {
+        flex-direction: row; } }
+    @media screen and (min-width: 1600px) {
+      .product__wrap {
+        gap: 1.7rem; } }
+  .product__btn-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem; }
+    @media screen and (min-width: 600px) {
+      .product__btn-box {
+        flex-basis: 35%; } }
+    @media screen and (min-width: 1200px) {
+      .product__btn-box {
+        max-width: 23.1rem; } }
+  .product__qty {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    background-color: #f8f8f8;
+    min-height: 5.9rem; }
+    @media screen and (min-width: 600px) {
+      .product__qty {
+        display: none; } }
+  .product__count {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    background-color: #f8f8f8;
+    min-height: 5.9rem; }
+    @media screen and (min-width: 600px) {
+      .product__count {
+        flex-basis: 100%; } }
+    @media screen and (min-width: 1200px) {
+      .product__count {
+        max-width: 23.1rem; } }
+  .product__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #2c2c2c; }
+    @media screen and (min-width: 600px) {
+      .product__text {
+        font-size: 1rem; } }
+    @media screen and (min-width: 768px) {
+      .product__text {
+        font-size: 1.3rem; } }
+    @media screen and (min-width: 1200px) {
+      .product__text {
+        font-size: 1.9rem;
+        line-height: 2.6rem; } }
+    @media screen and (min-width: 1600px) {
+      .product__text {
+        max-width: 55.9rem; } }
+  .product__badges {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    max-width: 23.1rem; }
+    @media screen and (min-width: 1600px) {
+      .product__badges {
+        margin-top: 3.6rem; } }
+  .product__badge {
+    max-width: 2.7rem; }
 
 .science {
   padding: 10rem 0;
