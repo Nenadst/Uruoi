@@ -662,6 +662,9 @@ h6 {
   .gallery__svg-star {
     width: 1.8rem;
     fill: #fff; }
+    @media screen and (min-width: 1200px) {
+      .gallery__svg-star {
+        width: 2.4rem; } }
   .gallery__price {
     color: #fff;
     text-align: center;
@@ -674,6 +677,14 @@ h6 {
     font-size: 1.30208vw;
     letter-spacing: 0.39062vw;
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
+    @media screen and (min-width: 1200px) {
+      .gallery__price {
+        font-size: 0.8vw;
+        top: 30%; } }
+    @media screen and (min-width: 1600px) {
+      .gallery__price {
+        font-size: 0.75vw;
+        top: 32%; } }
   .gallery__cart {
     position: absolute;
     left: 50%;
@@ -689,7 +700,8 @@ h6 {
     cursor: pointer; }
     @media screen and (min-width: 1200px) {
       .gallery__cart {
-        font-size: 1.2vw; } }
+        font-size: 0.8vw;
+        height: 3vw; } }
     .gallery__cart::after {
       content: "";
       height: 1px;
@@ -814,6 +826,9 @@ h6 {
   .grid__svg-star {
     width: 1.8rem;
     fill: #fff; }
+    @media screen and (min-width: 1200px) {
+      .grid__svg-star {
+        width: 2.4rem; } }
   .grid__price {
     color: #fff;
     text-align: center;
@@ -826,6 +841,14 @@ h6 {
     font-size: 1.30208vw;
     letter-spacing: 0.39062vw;
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
+    @media screen and (min-width: 1200px) {
+      .grid__price {
+        font-size: 0.8vw;
+        top: 30%; } }
+    @media screen and (min-width: 1600px) {
+      .grid__price {
+        font-size: 0.75vw;
+        top: 32%; } }
   .grid__cart {
     position: absolute;
     left: 50%;
@@ -839,9 +862,10 @@ h6 {
     font-weight: 400;
     letter-spacing: 0.15625vw;
     cursor: pointer; }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       .grid__cart {
-        font-size: 1.2vw; } }
+        font-size: 0.8vw;
+        height: 3vw; } }
     .grid__cart::after {
       content: "";
       height: 1px;

@@ -87,6 +87,10 @@
   &__svg-star {
     width: 1.8rem;
     fill: $color-white;
+
+    @include respond-to(lg) {
+      width: 2.4rem;
+    }
   }
 
   &__price {
@@ -103,6 +107,16 @@
     transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
       opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99),
       -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99);
+
+    @include respond-to(lg) {
+      font-size: 0.8vw;
+      top: 30%;
+    }
+
+    @include respond-to(xlg) {
+      font-size: 0.75vw;
+      top: 32%;
+    }
   }
 
   &__cart {
@@ -119,8 +133,9 @@
     letter-spacing: 0.15625vw;
     cursor: pointer;
 
-    @include respond-to(xlg) {
-      font-size: 1.2vw;
+    @include respond-to(lg) {
+      font-size: 0.8vw;
+      height: 3vw;
     }
 
     &::after {
