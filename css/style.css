@@ -896,23 +896,30 @@ h6 {
     transform: translate(-50%, -50%);
     width: 80%;
     color: #fff; }
-  .ingredient__heading {
+  .ingredient__heading h3 {
     display: flex;
     align-items: center;
     flex-direction: column; }
   .ingredient__heading-big {
     font-size: 3.2rem;
+    line-height: 4.2rem;
     margin-bottom: 1rem; }
+    @media screen and (min-width: 1200px) {
+      .ingredient__heading-big {
+        font-size: 5.5rem;
+        line-height: 8.4rem;
+        margin-bottom: 3rem; } }
     @media screen and (min-width: 1600px) {
       .ingredient__heading-big {
-        font-size: 5.5rem; } }
+        font-size: 7rem; } }
   .ingredient__heading-small {
-    font-size: 1.9rem; }
-    @media screen and (min-width: 1600px) {
+    font-size: 1.9rem;
+    line-height: 3.9rem; }
+    @media screen and (min-width: 1200px) {
       .ingredient__heading-small {
         font-size: 2.6rem; } }
   .ingredient__sup {
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .ingredient__right-content {
     display: flex;
     justify-content: center;
@@ -935,7 +942,7 @@ h6 {
     @media screen and (min-width: 600px) {
       .ingredient__text {
         font-size: 1rem; } }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       .ingredient__text {
         font-size: 1.9rem;
         line-height: 2.6rem; } }
