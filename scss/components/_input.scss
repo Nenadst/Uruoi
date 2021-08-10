@@ -4,4 +4,10 @@
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
   font-size: 1.6rem;
+
+  @include respond-to(lg) {
+    font-size: 1.7rem;
+    line-height: 3.3rem;
+    padding-bottom: 0;
+  }
 }

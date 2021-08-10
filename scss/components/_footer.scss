@@ -23,8 +23,8 @@
       justify-content: space-between;
     }
     @include respond-to(lg) {
-      gap: 4rem;
-      flex-basis: 64%;
+      row-gap: 10.5rem;
+      flex-basis: 60%;
     }
   }
 
@@ -35,6 +35,14 @@
 
     @include respond-to(lg) {
       flex-basis: 25%;
+      max-width: 35rem;
+    }
+  }
+
+  &__sign-up h3 {
+    @include respond-to(lg) {
+      font-size: 4rem;
+      margin-bottom: 2.1rem;
     }
   }
 
@@ -43,6 +51,8 @@
 
     @include respond-to(xlg) {
       font-size: 1.8rem;
+      line-height: 2.4rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -56,6 +66,10 @@
 
   &__list-item {
     margin-bottom: 1.5rem;
+
+    @include respond-to(xlg) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -64,6 +78,7 @@
 
     @include respond-to(xlg) {
       font-size: 1.8rem;
+      line-height: 3.3rem;
     }
 
     &:hover {
@@ -102,7 +117,25 @@
     @include respond-to(lg) {
       display: flex;
       flex-direction: column;
-      gap: 5rem;
+      gap: 4rem;
+    }
+  }
+
+  &__item h5 {
+    @include respond-to(lg) {
+      font-size: 4rem;
+    }
+  }
+
+  &__item-service h5 {
+    @include respond-to(lg) {
+      font-size: 4rem;
+    }
+  }
+
+  &__item-social h5 {
+    @include respond-to(lg) {
+      font-size: 4rem;
     }
   }
 
@@ -127,7 +160,11 @@
     }
 
     @include respond-to(lg) {
-      gap: 1rem;
+      gap: 3rem;
+    }
+
+    @include respond-to(xlg) {
+      gap: 5rem;
     }
   }
 
@@ -136,7 +173,8 @@
     font-size: 1.2rem;
 
     @include respond-to(lg) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      line-height: 3.3rem;
     }
   }
 
@@ -155,6 +193,7 @@
 
     @include respond-to(xlg) {
       font-size: 1.8rem;
+      line-height: 3.3rem;
     }
   }
 
@@ -164,6 +203,11 @@
 
     @include respond-to(sm) {
       order: 3;
+    }
+
+    @include respond-to(lg) {
+      font-size: 1.6rem;
+      line-height: 3.3rem;
     }
   }
 }
