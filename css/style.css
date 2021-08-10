@@ -256,31 +256,38 @@ h6 {
         gap: 1rem; } }
     @media screen and (min-width: 1200px) {
       .about__heading-content {
-        gap: 3rem; } }
+        gap: 6rem; } }
   @media screen and (min-width: 600px) {
     .about__img-content {
       display: flex;
       flex-direction: column-reverse;
       flex-basis: 35%;
       gap: 2rem; } }
+  @media screen and (min-width: 1200px) {
+    .about__img-content {
+      gap: 3rem; } }
   .about__img-box {
     display: none; }
-  .about__heading {
+  .about__heading h1 {
     font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 1.45rem;
+    letter-spacing: 1.045rem;
+    line-height: 1.2rem;
     color: #000;
     font-family: "Helvetica", sans-serif;
     margin-bottom: 3.4rem; }
     @media screen and (min-width: 600px) {
-      .about__heading {
+      .about__heading h1 {
         font-size: 1.2rem; } }
     @media screen and (min-width: 768px) {
-      .about__heading {
+      .about__heading h1 {
         line-height: 2.5; } }
     @media screen and (min-width: 1200px) {
-      .about__heading {
+      .about__heading h1 {
         font-size: 1.4rem; } }
+    @media screen and (min-width: 1600px) {
+      .about__heading h1 {
+        margin-top: 0.5rem; } }
   .about__title {
     color: rgba(0, 0, 0, 0.3);
     font-size: 4.2rem;
@@ -316,6 +323,11 @@ h6 {
   .about__img {
     width: 22.8rem;
     height: 31.1rem; }
+    @media screen and (min-width: 1200px) {
+      .about__img {
+        width: 100%;
+        max-width: 36.4rem;
+        height: 100%; } }
   .about__text {
     font-size: 2.1rem;
     line-height: 2.7rem;
@@ -325,7 +337,8 @@ h6 {
         font-size: 1.3rem; } }
     @media screen and (min-width: 1200px) {
       .about__text {
-        font-size: 2rem; } }
+        font-size: 2.5rem;
+        line-height: 4rem; } }
     @media screen and (min-width: 1600px) {
       .about__text {
         font-size: 3rem; } }

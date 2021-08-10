@@ -17,7 +17,7 @@
     }
 
     @include respond-to(lg) {
-      gap: 3rem;
+      gap: 6rem;
     }
   }
 
@@ -28,16 +28,21 @@
       flex-basis: 35%;
       gap: 2rem;
     }
+
+    @include respond-to(lg) {
+      gap: 3rem;
+    }
   }
 
   &__img-box {
     display: none;
   }
 
-  &__heading {
+  &__heading h1 {
     font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 1.45rem;
+    letter-spacing: 1.045rem;
+    line-height: 1.2rem;
     color: $color-black;
     font-family: $ff-sans;
     margin-bottom: 3.4rem;
@@ -52,6 +57,9 @@
 
     @include respond-to(lg) {
       font-size: 1.4rem;
+    }
+    @include respond-to(xlg) {
+      margin-top: 0.5rem;
     }
   }
 
@@ -103,6 +111,12 @@
   &__img {
     width: 22.8rem;
     height: 31.1rem;
+
+    @include respond-to(lg) {
+      width: 100%;
+      max-width: 36.4rem;
+      height: 100%;
+    }
   }
 
   &__text {
@@ -115,7 +129,8 @@
     }
 
     @include respond-to(lg) {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      line-height: 4rem;
     }
 
     @include respond-to(xlg) {
