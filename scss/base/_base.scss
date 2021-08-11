@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 3.2vw;
   @include respond-to(md) {
     // font-size: 1.6vw !important; //23.04px
     font-size: 1vw !important;
