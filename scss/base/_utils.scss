@@ -111,6 +111,12 @@
   }
 }
 
+.max-width-lg-33 {
+  @include respond-to(lg) {
+    max-width: 33rem;
+  }
+}
+
 .max-width-lg-34 {
   @include respond-to(lg) {
     max-width: 34rem;
@@ -120,5 +126,11 @@
 .max-width-lg-36 {
   @include respond-to(lg) {
     max-width: 36rem;
+  }
+}
+
+.max-width-lg-38 {
+  @include respond-to(lg) {
+    max-width: 38rem;
   }
 }
