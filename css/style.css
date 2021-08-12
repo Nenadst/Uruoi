@@ -368,6 +368,113 @@ h6 {
       .about__text {
         font-size: 3rem; } }
 
+.acid {
+  padding: 5rem 0; }
+  @media screen and (min-width: 768px) {
+    .acid__content {
+      display: flex;
+      gap: 2rem;
+      padding: 0 10.8vw;
+      margin: 0 auto; } }
+  @media screen and (min-width: 768px) {
+    .acid__content {
+      padding: 0 13rem; } }
+  @media screen and (min-width: 1200px) {
+    .acid__content {
+      gap: 1rem; } }
+  .acid__img-box {
+    margin-bottom: 4rem; }
+    @media screen and (min-width: 768px) {
+      .acid__img-box {
+        flex-basis: 43%;
+        position: relative;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1200px) {
+      .acid__img-box {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-start; } }
+  @media screen and (min-width: 1200px) {
+    .acid__img img {
+      max-width: 70rem; } }
+  .acid__img-small {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .acid__img-small {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 15rem; } }
+    @media screen and (min-width: 1200px) {
+      .acid__img-small {
+        max-width: 24.9rem; } }
+  .acid__container {
+    margin: 0 auto;
+    padding: 0 1.9rem; }
+    @media screen and (min-width: 480px) {
+      .acid__container {
+        max-width: 58rem; } }
+    @media screen and (min-width: 768px) {
+      .acid__container {
+        flex-basis: 57%;
+        max-width: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative; } }
+    @media screen and (min-width: 1200px) {
+      .acid__container {
+        flex-basis: 50%;
+        padding-right: 6rem; } }
+  .acid__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    @media screen and (min-width: 768px) {
+      .acid__wrap {
+        max-width: 25rem; } }
+    @media screen and (min-width: 1200px) {
+      .acid__wrap {
+        max-width: 40rem; } }
+  .acid__number {
+    font-family: "GTSectraDisplay", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .acid__number {
+        font-size: 1.6rem;
+        line-height: 1rem;
+        margin-bottom: 0.5rem; } }
+    @media screen and (min-width: 1200px) {
+      .acid__number {
+        font-size: 2.8rem;
+        line-height: 5rem; } }
+  .acid__heading h5 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 768px) {
+      .acid__heading h5 {
+        font-size: 2rem;
+        margin-bottom: 2.2rem; } }
+    @media screen and (min-width: 1200px) {
+      .acid__heading h5 {
+        font-size: 3.5rem;
+        line-height: 7rem;
+        margin-bottom: 4rem; } }
+  .acid__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+    @media screen and (min-width: 1200px) {
+      .acid__text {
+        font-size: 1.9rem;
+        line-height: 2.6rem; } }
+
 .authentic {
   padding: 8rem 0;
   background-color: #f7f7f7; }
