@@ -1031,6 +1031,94 @@ h6 {
         font-size: 1.8rem;
         line-height: 2.1rem; } }
 
+.gluco {
+  padding: 5rem 0; }
+  @media screen and (min-width: 768px) {
+    .gluco__content {
+      display: flex;
+      padding: 0 10.8vw;
+      margin: 0 auto; } }
+  .gluco__img-box {
+    margin-bottom: 4rem; }
+    @media screen and (min-width: 768px) {
+      .gluco__img-box {
+        flex-basis: 50%;
+        position: relative;
+        margin-bottom: 0; } }
+  .gluco__img-small {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .gluco__img-small {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -30%;
+        transform: translateY(-50%);
+        max-width: 17rem; } }
+    @media screen and (min-width: 1200px) {
+      .gluco__img-small {
+        max-width: 32.5rem;
+        right: -32%; } }
+  .gluco__container {
+    margin: 0 auto;
+    padding: 0 1.9rem; }
+    @media screen and (min-width: 480px) {
+      .gluco__container {
+        max-width: 58rem; } }
+    @media screen and (min-width: 768px) {
+      .gluco__container {
+        flex-basis: 50%;
+        max-width: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; } }
+  .gluco__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    @media screen and (min-width: 768px) {
+      .gluco__wrap {
+        max-width: 25rem; } }
+    @media screen and (min-width: 1200px) {
+      .gluco__wrap {
+        max-width: 40rem; } }
+  .gluco__number {
+    font-family: "GTSectraDisplay", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .gluco__number {
+        font-size: 1.6rem;
+        line-height: 1rem;
+        margin-bottom: 0.5rem; } }
+    @media screen and (min-width: 1200px) {
+      .gluco__number {
+        font-size: 2.8rem;
+        line-height: 5rem; } }
+  .gluco__heading h5 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 768px) {
+      .gluco__heading h5 {
+        font-size: 2rem;
+        margin-bottom: 2.2rem; } }
+    @media screen and (min-width: 1200px) {
+      .gluco__heading h5 {
+        font-size: 3.5rem;
+        line-height: 7rem;
+        margin-bottom: 4rem; } }
+  .gluco__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+    @media screen and (min-width: 1200px) {
+      .gluco__text {
+        font-size: 1.9rem;
+        line-height: 2.6rem; } }
+
 .grid {
   padding: 5rem 0; }
   .grid__heading-main h2 {
