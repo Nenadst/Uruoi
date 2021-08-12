@@ -1,16 +1,16 @@
-.kernel {
+.leaf {
   padding: 5rem 0;
 
   &__content {
     @include respond-to(md) {
       display: flex;
+      flex-direction: row-reverse;
       gap: 2rem;
-      padding-right: 10.8vw;
+      padding-left: 10.8vw;
       margin: 0 auto;
     }
-
     @include respond-to(lg) {
-      padding-right: 13rem;
+      padding-left: 13rem;
     }
   }
 
@@ -31,7 +31,6 @@
 
     @include respond-to(lg) {
       padding: 15.1rem 0 13.2rem;
-      flex-basis: 54%;
     }
   }
 
@@ -62,7 +61,7 @@
     @include respond-to(lg) {
       max-width: 24.4rem;
       top: 36.5%;
-      left: 17%;
+      left: 20%;
     }
   }
 
@@ -117,15 +116,13 @@
       max-width: none;
       padding: 0;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      position: relative;
     }
 
     @include respond-to(lg) {
-      flex-basis: 46%;
-      justify-content: flex-start;
-      padding-left: 11rem;
+      flex-basis: 50%;
+      padding-left: 7.8rem;
     }
   }
 
@@ -139,7 +136,7 @@
     }
 
     @include respond-to(lg) {
-      max-width: 44rem;
+      max-width: 50rem;
     }
   }
 

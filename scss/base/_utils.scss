@@ -134,3 +134,15 @@
     max-width: 38rem;
   }
 }
+
+.max-width-lg-40 {
+  @include respond-to(lg) {
+    max-width: 40rem;
+  }
+}
+
+.max-width-lg-42 {
+  @include respond-to(lg) {
+    max-width: 42rem;
+  }
+}
