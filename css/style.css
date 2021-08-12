@@ -2096,6 +2096,109 @@ h6 {
         line-height: 2.6rem;
         letter-spacing: 0.035rem; } }
 
+.sodium {
+  padding: 5rem 0; }
+  @media screen and (min-width: 768px) {
+    .sodium__content {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 2rem;
+      padding: 0 10.8vw;
+      margin: 0 auto; } }
+  .sodium__img-box {
+    margin-bottom: 4rem; }
+    @media screen and (min-width: 768px) {
+      .sodium__img-box {
+        flex-basis: 43%;
+        position: relative;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1200px) {
+      .sodium__img-box {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-end; } }
+  @media screen and (min-width: 1200px) {
+    .sodium__img img {
+      max-width: 70rem; } }
+  .sodium__img-small {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .sodium__img-small {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        max-width: 15rem; } }
+    @media screen and (min-width: 1200px) {
+      .sodium__img-small {
+        max-width: 24.9rem;
+        right: -32%; } }
+  .sodium__container {
+    margin: 0 auto;
+    padding: 0 1.9rem; }
+    @media screen and (min-width: 480px) {
+      .sodium__container {
+        max-width: 58rem; } }
+    @media screen and (min-width: 768px) {
+      .sodium__container {
+        flex-basis: 57%;
+        max-width: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative; } }
+    @media screen and (min-width: 1200px) {
+      .sodium__container {
+        flex-basis: 50%;
+        padding-right: 6rem; } }
+  .sodium__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    @media screen and (min-width: 768px) {
+      .sodium__wrap {
+        max-width: 25rem; } }
+    @media screen and (min-width: 1200px) {
+      .sodium__wrap {
+        max-width: 40rem; } }
+  .sodium__number {
+    font-family: "GTSectraDisplay", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .sodium__number {
+        font-size: 1.6rem;
+        line-height: 1rem;
+        margin-bottom: 0.5rem; } }
+    @media screen and (min-width: 1200px) {
+      .sodium__number {
+        font-size: 2.8rem;
+        line-height: 5rem; } }
+  .sodium__heading h5 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 768px) {
+      .sodium__heading h5 {
+        font-size: 2rem;
+        margin-bottom: 2.2rem; } }
+    @media screen and (min-width: 1200px) {
+      .sodium__heading h5 {
+        font-size: 3.5rem;
+        line-height: 7rem;
+        margin-bottom: 4rem; } }
+  .sodium__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+    @media screen and (min-width: 1200px) {
+      .sodium__text {
+        font-size: 1.9rem;
+        line-height: 2.6rem; } }
+
 .staples {
   padding-top: 5rem; }
   .staples__container {
