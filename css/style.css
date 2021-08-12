@@ -459,48 +459,85 @@ h6 {
     .btn--cart {
       flex-basis: 65%; } }
 
-.btn {
-  color: #fff;
-  background-color: #000;
-  height: 5.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media screen and (min-width: 600px) {
-    .btn {
-      max-width: 35rem; } }
+.collagen {
+  padding: 5rem 0; }
   @media screen and (min-width: 768px) {
-    .btn {
-      font-size: 2.2rem;
-      max-width: 45rem; } }
-  @media screen and (min-width: 1200px) {
-    .btn {
-      height: 7.5rem;
-      font-size: 1.6rem;
-      max-width: 35rem; } }
-  .btn:hover .btn--arrow {
-    transform: scale(1) translateX(-5px);
-    opacity: 1; }
-  .btn:hover .btn--span {
-    transform: translateX(25px); }
-  .btn--span {
+    .collagen__content {
+      display: flex;
+      gap: 2rem;
+      padding-right: 10.8vw;
+      margin: 0 auto; } }
+  .collagen__img-box {
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-right: 3rem;
-    transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
-  .btn--arrow {
-    color: #fff;
-    height: 100%;
-    opacity: 0;
-    margin-top: 0.2rem;
-    transform: scale(0.8) translateX(0);
-    transition: transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), opacity 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99), -webkit-transform 0.5s cubic-bezier(0.16, 0.01, 0.13, 0.99); }
-    .btn--arrow svg {
-      fill: #fff; }
-  @media screen and (min-width: 1200px) {
-    .btn--cart {
-      flex-basis: 65%; } }
+    justify-content: center; }
+    @media screen and (min-width: 768px) {
+      .collagen__img-box {
+        flex-basis: 57%;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1200px) {
+      .collagen__img-box {
+        justify-content: flex-start; } }
+  .collagen__container {
+    margin: 0 auto;
+    padding: 0 1.9rem; }
+    @media screen and (min-width: 480px) {
+      .collagen__container {
+        max-width: 58rem; } }
+    @media screen and (min-width: 768px) {
+      .collagen__container {
+        flex-basis: 43%;
+        max-width: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+  .collagen__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    @media screen and (min-width: 768px) {
+      .collagen__wrap {
+        max-width: 30rem; } }
+    @media screen and (min-width: 1200px) {
+      .collagen__wrap {
+        max-width: 44rem; } }
+  .collagen__number {
+    font-family: "GTSectraDisplay", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      .collagen__number {
+        font-size: 1.6rem;
+        line-height: 1rem;
+        margin-bottom: 0.5rem; } }
+    @media screen and (min-width: 1200px) {
+      .collagen__number {
+        font-size: 2.8rem;
+        line-height: 5rem; } }
+  .collagen__heading h5 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 768px) {
+      .collagen__heading h5 {
+        font-size: 2rem;
+        margin-bottom: 2.2rem; } }
+    @media screen and (min-width: 1200px) {
+      .collagen__heading h5 {
+        font-size: 3.5rem;
+        line-height: 7rem;
+        margin-bottom: 4rem; } }
+  .collagen__text {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+    @media screen and (min-width: 1200px) {
+      .collagen__text {
+        font-size: 1.9rem;
+        line-height: 2.6rem; } }
 
 .discovery {
   padding: 5rem 0; }
