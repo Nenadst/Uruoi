@@ -302,6 +302,27 @@
     }
   }
 
+  &__minus {
+    border: none;
+    background-color: transparent;
+    font-size: 2.1rem;
+
+    @include respond-to(md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__plus {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.5rem;
+    font-size: 2.1rem;
+
+    @include respond-to(md) {
+      font-size: 2.5rem;
+    }
+  }
+
   &__text {
     font-size: 1.4rem;
     line-height: 2.2rem;
